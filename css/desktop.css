@@ -41,6 +41,12 @@
         width: 200px;
         display: block;
     }
-
+    .link{
+        text-decoration: none;
+        font-size: 18px;  
+    }
+    .link:hover{
+        font-size: 22px; 
+    }
     
 }

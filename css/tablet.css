@@ -7,8 +7,19 @@
     }
     .container-texto-resultado{
         width: 80%;
+        height: 100%;
     }
-    footer{ 
+    
+    .footer-texto{ 
+        font-weight: 900;
         font-size: 16px;
     }
-} 
+    
+    .link{
+        text-decoration: none;
+        font-size: 16px;  
+    }
+    .link:hover{
+        font-size: 18px; 
+    }
+}  
