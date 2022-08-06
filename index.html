@@ -10,7 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <style>
+
+    </style>
 </head>
 <body>
     <header>
@@ -18,17 +22,18 @@
     </header>
     <main>
         <textarea class="texto-ingresado" type="text" placeholder="Ingresa tu texto aquí"></textarea>
-        <div class="container-boton">
+        <div class="container-botones">
             <div class="container-advertencia">
                 <img class="icono-advertencia" src="images/exclamacion.png" alt="">
                 <p class="texto-advertencia">
                     Solo letras minusculas y sin acentos. 
                 </p>
             </div>
+            <div class="botones">
+                <button class="boton encriptador">Encriptar</button>
 
-            <button class="boton encriptador">Encriptar</button>
-
-            <button class="boton desencriptador">Desencriptar</button>
+                <button class="boton desencriptador">Desencriptar</button>
+            </div>
         </div>
         <div class="container-texto-resultado">
         <p class="mensaje-1" >Ningún mensaje fue encontrado 

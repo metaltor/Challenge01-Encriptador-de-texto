@@ -11,6 +11,7 @@
 }
 body{
     background-color: var(--fondo);
+    width: 100%;
     min-width: 375px;
     display: flex;
     flex-direction: column;
@@ -22,6 +23,7 @@ body{
     display: block;
 }
 main{
+    
     display: flex;
     flex-direction: column;  
     align-items: center;         
@@ -43,7 +45,7 @@ textarea.texto-ingresado::placeholder{
     font-size: 32px;
     color: var(--azul) ;
 }
-.container-boton{
+.container-botones{
     display: flex;
     flex-direction: column;
 }
@@ -62,6 +64,10 @@ textarea.texto-ingresado::placeholder{
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
+}
+.botones{
+    display: flex;
+    flex-direction: column;
 }
 .boton{
     width: 343px;
@@ -110,5 +116,13 @@ footer{
 }
 
 @media (min-width: 700px){
-
+    .texto-ingresado{
+        width: 80%;
+    }
+    .botones{
+        flex-direction: row;
+    }
+    .container-texto-resultado{
+        width: 80%;
+    }
 }
