@@ -1,0 +1,14 @@
+@media (min-width: 800px){
+    .texto-ingresado{
+        width: 80%;
+    }
+    .botones{
+        flex-direction: row;
+    }
+    .container-texto-resultado{
+        width: 80%;
+    }
+    footer{ 
+        font-size: 16px;
+    }
+} 
