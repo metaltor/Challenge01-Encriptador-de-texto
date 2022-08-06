@@ -1,0 +1,114 @@
+:root{
+    --fondo : #E5E5E5;
+    --azul : #0A3871;
+    --blanco : #FFF;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: var(--fondo);
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    width: 32px;
+    height: 48px;
+    margin: 24px 16px;
+    display: block;
+}
+main{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;         
+
+    
+}
+.texto-ingresado {
+   width:  343px;
+   min-height: 250px;
+   border: 0px;
+   text-align: center;
+   font-size: 32px;
+   color: var(--azul) ;
+   background-color: var(--fondo);
+}
+textarea.texto-ingresado::placeholder{
+    vertical-align: top;
+    text-align: center;
+    font-size: 32px;
+    color: var(--azul) ;
+}
+.container-boton{
+    display: flex;
+    flex-direction: column;
+}
+.container-advertencia{
+    margin: 8px 16px;
+    display: flex;
+    
+}
+.icono-advertencia{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.texto-advertencia{
+    text-align: start;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+.boton{
+    width: 343px;
+    height: 67px;
+    border-radius: 24px;
+    margin: 12px 16px; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px; 
+    border: 1px solid var(--azul);
+}
+.encriptador{
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.desencriptador{
+    color: var(--azul);
+}
+.container-texto-resultado {
+    width: 327px;
+    min-width: 186px;
+    margin: 10px 24px;
+    background-color: var(--blanco);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.mensaje-1{
+    padding: 32px 32px 16px 32px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+.mensaje-2{
+    padding: 16px 32px 32px 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+footer{ 
+    padding: 5px;
+    text-align: center;
+    margin: 5px 16px;
+}
+
+@media (min-width: 700px){
+
+}
