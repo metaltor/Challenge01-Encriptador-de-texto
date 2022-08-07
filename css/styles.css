@@ -94,6 +94,7 @@ textarea.texto-ingresado::placeholder{
 .boton:hover{
     font-weight: 600;
     font-size: 24px;
+    cursor: pointer;
 }
 .encriptador{
     background-color: var(--azul);
@@ -125,7 +126,7 @@ textarea.texto-ingresado::placeholder{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 24px;
+    border-radius: 10px;
     margin: 12px 16px; 
     font-weight: 600;
     font-size: 16px;
@@ -138,9 +139,11 @@ textarea.texto-ingresado::placeholder{
 }
 .boton-copiar:hover{
     font-size: 18px;
+    cursor: pointer;
 }
 .imagen-resultado{
     display: none;
+    opacity: 0.8;
 }
 .mensaje-1{
     vertical-align: middle;
@@ -154,8 +157,8 @@ textarea.texto-ingresado::placeholder{
 }
 .mensaje-2{
     padding: 16px 32px 32px 32px;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
     line-height: 24px;
     text-align: center;
 }
@@ -199,4 +202,7 @@ footer{
     font-weight: 800;
     color: white;
     padding: 0px 8px;
+}
+.resultado{
+    justify-content: flex-start;
 }
