@@ -1,10 +1,14 @@
 @media (min-width: 700px){
+    
+    body{
+        height: 100%;
+    }
     main{
         height: 85vh;
                 
     }
-    body{
-        height: 100%;
+    .formulario-encriptador{
+    justify-content: space-around;
     }
     .texto-ingresado{
         width: 80%;
@@ -13,7 +17,7 @@
         flex-direction: row;
     }
     .container-texto-resultado{
-        width: 80%;
+        
         height: 100%;
     }
     
@@ -28,5 +32,8 @@
     }
     .link:hover{
         font-size: 18px; 
+    }
+    footer{
+        height: 5vh;
     }
 }  
