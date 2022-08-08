@@ -11,7 +11,7 @@
     font-family: 'Inter', sans-serif;
 }
 body{
-    min-height: 100vh;
+    min-height: 100%;
     background-color: var(--fondo);
     width: 100%;
     display: flex;
@@ -44,6 +44,7 @@ main{
    width:  343px;
    min-height: 150px;
    border: 0px;
+   padding: 10px;
    text-align: center;
    font-size: 32px;
    color: var(--azul) ;
@@ -115,12 +116,11 @@ textarea.texto-ingresado::placeholder{
     color: var(--azul);
 }
 .container-texto-resultado {
-    width: 327px;
-    
+    max-width: 327px;
     display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px ;
     background-color: var(--blanco);
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -160,14 +160,17 @@ textarea.texto-ingresado::placeholder{
     padding: 32px 32px 16px 32px;
     font-weight: 700;
     font-size: 24px;
-    text-align: center;
+    
 }
 .mensaje-2{
+    height: auto;
+    width: 100%;
     padding: 16px 32px 32px 32px;
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
+    word-wrap: break-word;
 }
 footer{
     display: flex;
