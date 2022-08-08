@@ -1,16 +1,14 @@
 @media (min-width: 1000px){
-    main{
-        height: 85vh;
-                
-    }
+    
     body{
         display: block;
-        
+        height: 98vh;
     }
     header{
-        height: 10vh;
+        height: 9vh;
     }
     main{
+        /* height: 85vh; */
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: 1fr;
