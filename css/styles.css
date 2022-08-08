@@ -44,21 +44,21 @@ main{
    width:  343px;
    min-height: 150px;
    border: 0px;
-   padding: 10px;
+   padding: 20px;
    text-align: center;
    font-size: 32px;
    color: var(--azul) ;
    background-color: var(--blanco);
    border-radius: 30px;
    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-    box-shadow: 9px 9px 8px -6px rgba(0,0,0,0.49);
-    -webkit-box-shadow: 9px 9px 8px -6px rgba(0,0,0,0.49);
-    -moz-box-shadow: 9px 9px 8px -6px rgba(0,0,0,0.49);
+   border-radius: 32px;
+   box-shadow: 9px 9px 8px -6px rgba(0,0,0,0.49);
+   -webkit-box-shadow: 9px 9px 8px -6px rgba(0,0,0,0.49);
+   -moz-box-shadow: 9px 9px 8px -6px rgba(0,0,0,0.49);
    
 }
 textarea.texto-ingresado::placeholder{
-    padding-top: 15px;
+    padding: 15px;
     font-weight: 600;
     vertical-align: top;
     text-align: center;
