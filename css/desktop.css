@@ -1,5 +1,8 @@
 @media (min-width: 1000px){
-    
+    main{
+        height: 85vh;
+                
+    }
     body{
         display: block;
         
