@@ -11,7 +11,7 @@
     font-family: 'Inter', sans-serif;
 }
 body{
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--fondo);
     width: 100%;
     display: flex;
@@ -22,6 +22,7 @@ header{
     padding: 24px 16px;
 }
 .logo{
+    
     width: 32px;
     height: 48px;
     display: block;
@@ -120,7 +121,6 @@ textarea.texto-ingresado::placeholder{
     -moz-box-shadow: 9px 9px 8px -6px rgba(0,0,0,0.49);
 }
 .boton-copiar{
-    visibility: hidden;
     width: 150px;
     height: 50px;
     display: flex;
@@ -146,13 +146,11 @@ textarea.texto-ingresado::placeholder{
     opacity: 0.8;
 }
 .mensaje-1{
-    vertical-align: middle;
     border-radius: 10px;
     width: 60%;
     padding: 32px 32px 16px 32px;
     font-weight: 700;
     font-size: 24px;
-    line-height: 29px;
     text-align: center;
 }
 .mensaje-2{

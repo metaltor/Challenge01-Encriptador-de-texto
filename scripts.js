@@ -97,6 +97,6 @@ function imprimirResultado(texto){
     
 }
 function mostrarBotonCopiar(){
-document.querySelector('#boton-copiar').style.visibility = 'visible'
+document.querySelector('#boton-copiar').classList.remove('hiden')
 document.querySelector('#texto-resultado').classList.add('resultado');
 }
