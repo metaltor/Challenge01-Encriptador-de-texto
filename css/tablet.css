@@ -1,4 +1,11 @@
 @media (min-width: 700px){
+    main{
+        height: 85vh;
+                
+    }
+    body{
+        height: 100%;
+    }
     .texto-ingresado{
         width: 80%;
     }
