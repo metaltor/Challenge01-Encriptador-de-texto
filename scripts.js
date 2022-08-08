@@ -32,14 +32,15 @@ function desencriptar(event){
     const $formulario = document.querySelector('#texto-para-encriptar');
     let texto = $formulario['texto-ingresado'].value;
     if(validador(texto) && texto !=''){
-    texto.replace(/imes/igm, "i"); 
-    texto = texto.replace(/ai/igm, "a"); 
-    texto = texto.replace(/enter/igm, "e"); 
-    texto = texto.replace(/ober/igm, "o"); 
-    texto = texto.replace(/ufat/igm, "u");
+    let textoEncriptado = texto
+    .replaceAll(/imes/igm, "i")
+    .replaceAll(/ai/igm, "a")
+    .replaceAll(/enter/igm, "e") 
+    .replaceAll(/ober/igm, "o")
+    .replaceAll(/ufat/igm, "u")
     mostrarBotonCopiar()
-    imprimirResultado(texto) 
-    }else if (texto === ''){
+    imprimirResultado(textoEncriptado) 
+    }else if (textoEncriptado === ''){
         pikachuVacio()
         setTimeout(() => {
             pikachuFeliz()
