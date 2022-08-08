@@ -86,7 +86,7 @@ function pikachuFeliz(){
 function pikachuVacio(){
     document.querySelector('#pikachu').src="images/pikachu-triste.png";
     document.querySelector('#mensaje2').classList.add('hiden');
-    document.querySelector('#mensaje1').textContent = "No ingresaste nada.";
+    document.querySelector('#mensaje1').textContent = "No ingresaste nada!!!";
     document.querySelector('#mensaje1').classList.add('alerta-texto');
 }
 
