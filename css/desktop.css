@@ -32,6 +32,7 @@
         display: flex;
     }
     .container-texto-resultado{
+        width: 350px;
         grid-column: 3 / 4;
         grid-row: 1 / 3;
         display: flex;
