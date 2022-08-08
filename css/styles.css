@@ -42,7 +42,7 @@ main{
 }
 .texto-ingresado {
    width:  343px;
-   min-height: 150px;
+   min-height: 200px;
    border: 0px;
    padding: 20px;
    text-align: center;
@@ -116,7 +116,7 @@ textarea.texto-ingresado::placeholder{
     color: var(--azul);
 }
 .container-texto-resultado {
-    max-width: 327px;
+    width: 327px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,6 +155,7 @@ textarea.texto-ingresado::placeholder{
     opacity: 0.8;
 }
 .mensaje-1{
+    text-align: center;
     border-radius: 10px;
     width: 60%;
     padding: 32px 32px 16px 32px;
@@ -163,6 +164,7 @@ textarea.texto-ingresado::placeholder{
     
 }
 .mensaje-2{
+    text-align: center;
     height: auto;
     width: 100%;
     padding: 16px 32px 32px 32px;
@@ -171,6 +173,7 @@ textarea.texto-ingresado::placeholder{
     line-height: 24px;
     text-align: center;
     word-wrap: break-word;
+    overflow: hidden;
 }
 footer{
     display: flex;
