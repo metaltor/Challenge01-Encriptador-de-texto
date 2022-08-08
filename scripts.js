@@ -11,7 +11,12 @@ function encriptar(event){
         .map(letra => letra === "a" ? letra = "ai" : letra === 'e' ? letra = 'enter': letra === 'i' ? letra = 'imes' : letra === 'o' ? letra = 'ober' : letra === 'u' ? letra = 'ufat' : letra)
         .join('');
         mostrarBotonCopiar()
-       imprimirResultado(nuevoTexto) 
+       imprimirResultado(nuevoTexto)
+       setTimeout(() => {
+        
+        ocultarBotonCopiar()
+        reiniciar()
+    }, 10000);
         
     } else if (texto === ''){
         pikachuVacio()
@@ -40,6 +45,11 @@ function desencriptar(event){
     .replaceAll(/ufat/igm, "u")
     mostrarBotonCopiar()
     imprimirResultado(textoEncriptado) 
+    setTimeout(() => {
+        
+        ocultarBotonCopiar()
+        reiniciar()
+    }, 10000);
     }else if (textoEncriptado === ''){
         pikachuVacio()
         setTimeout(() => {
@@ -67,6 +77,12 @@ function validador(texto){
     }else{
         return false
     }
+}
+function reiniciar(){
+    document.querySelector('#pikachu').classList.remove('hiden')
+    document.querySelector('#mensaje1').classList.remove('hiden');
+    document.querySelector('#mensaje2').textContent = 'Ingresa el texto que desees encriptar o desencriptar.';
+    document.querySelector('#texto-ingresado').value =''
 }
 function pikachuTriste(){
     document.querySelector('#pikachu').src="images/pikachu-triste.png";
@@ -97,6 +113,11 @@ function imprimirResultado(texto){
     
 }
 function mostrarBotonCopiar(){
-document.querySelector('#boton-copiar').classList.remove('hiden')
-document.querySelector('#texto-resultado').classList.add('resultado');
+    document.querySelector('#boton-copiar').classList.remove('hiden')
+    document.querySelector('#texto-resultado').classList.add('resultado');
+}
+
+function ocultarBotonCopiar(){
+    document.querySelector('#boton-copiar').classList.add('hiden')
+    document.querySelector('#texto-resultado').classList.remove('resultado'); 
 }
