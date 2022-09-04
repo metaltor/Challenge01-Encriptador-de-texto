@@ -16,7 +16,7 @@ function encriptar(event){
         
         ocultarBotonCopiar()
         reiniciar()
-    }, 10000);
+    }, 15000);
         
     } else if (texto === ''){
         pikachuVacio()
@@ -49,7 +49,7 @@ function desencriptar(event){
         
         ocultarBotonCopiar()
         reiniciar()
-    }, 10000);
+    }, 15000);
     }else if (textoEncriptado === ''){
         pikachuVacio()
         setTimeout(() => {
